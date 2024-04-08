@@ -1,7 +1,7 @@
 <h1 align="center">PORTIFÓLIO</h1>
 
 <p align="center">
-Portifolio desenvolvido afim de mostrar um pouco dos projetos que ja realizei e tambem começar em uma nova tecnologia, o React.<br/>
+Portifólio desenvolvido afim de mostrar um pouco dos projetos que ja realizei e tambem começar em uma nova tecnologia, o React.<br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,21 +16,19 @@ Portifolio desenvolvido afim de mostrar um pouco dos projetos que ja realizei e 
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="./src/assets/layout.png" width="100%">
+  <img alt="projeto DevLinks" src="./src/assets/layout.png" width="70%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
 - React - Vite
 - JavaScript
-- Git e Github
-- Figma
 - React Router Dom
 - Node JS
+- Git e Github
+- Figma
 
 ## 💻 Projeto
 
