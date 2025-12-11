@@ -1,117 +1,74 @@
-:root {
-  background-color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-size: 62.5%;
-  /* colors */
-  --colorTextTitles: #020817;
-  --colorTextDescription: #94a3b8;
-  --colorBorderSection: #806aff;
-  --colorTextPrimarySection: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-  /* font-size */
-  --font-sizeH2: 1.8rem;
-  --font-sizeDescription: 1.7rem;
+@theme {
+  /* Core Colors defined directly in Tailwind */
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #171717;
+
+  --color-text-primary: #ededed;
+  --color-text-secondary: #a3a3a3;
+
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+
+  --color-border: #262626;
+
+  --font-sans: "Inter", sans-serif;
+
+  --radius-radius: 0.5rem;
 }
+
+/* CSS Reset & Global Styles */
 body {
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-.home-container {
-  width: 35rem;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-.projects-container {
-  max-width: 70rem;
-}
-.nav-bar {
-  color: var(--colorTextTitles);
-  gap: 1rem;
-  cursor: pointer;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: center;
-  font-size: var(--font-sizeH2);
-}
-.nav-bar a {
-  color: var(--colorTextTitles);
-  text-decoration: none;
+/* Utility classes mapping if needed (Standard Tailwind classes like bg-neutral-950 usually suffice, but mapping old vars helps migration) */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-/* 
-Inicio Estilização da pagina de projetos 
-*/
-
-p {
-  font-size: var(--font-sizeH2);
-  color: var(--colorTextTitles);
-}
-.container-project {
-  width: 100%;
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
 }
 
-.container-project img {
-  width: 100%;
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
 }
-.container-project span {
-  color: var(--colorTextTitles);
-  font-size: var(--font-sizeH2);
-  text-align: start;
-  display: flex;
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
 }
-.container-project p {
-  text-align: justify;
-  color: var(--colorTextDescription);
-}
-/* 
-Fim Estilização da pagina de projetos 
-*/
-.headerContent img {
-  border-radius: 100px;
-}
-.headerContent h2 {
-  color: var(--colorTextTitles);
-  font-size: var(--font-sizeH2);
-}
-.headerContent .description {
-  color: var(--colorTextDescription);
-  font-size: var(--font-sizeDescription);
-  margin-bottom: 3.3rem;
-  display: flex;
-  justify-content: center;
-  display: block;
-}
-.primary-container {
-  background-color: var(--colorBorderSection);
-  padding: 1px;
-  margin-bottom: 1rem;
-}
-.primary-container h2 {
-  color: var(--colorTextPrimarySection);
-}
-.primary-container p {
-  color: var(--colorTextPrimarySection);
-}
-.container-section {
-  border: 1px solid var(--colorBorderSection);
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-}
-.section-title {
-  color: var(--colorTextTitles);
-  font-size: var(--font-sizeH2);
-  font-weight: 400;
-}
-.section-description {
-  color: var(--colorTextDescription);
-  font-size: var(--font-sizeDescription);
-}
-.footer {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  gap: 1rem;
+
+/* Components Layer */
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-6;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium cursor-pointer transition-all duration-200 border-none;
+  }
+
+  .btn-primary {
+    @apply bg-white text-black hover:bg-gray-200;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border border-white/20 text-white hover:bg-white/5 hover:border-white;
+  }
 }
