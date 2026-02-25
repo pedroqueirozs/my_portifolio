@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Experience = ({ data }) => {
     return (
         <section id="experience" className="py-24">

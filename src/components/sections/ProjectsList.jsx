@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const ProjectCard = ({ project }) => (
     <div className="group relative bg-[#0a0a0a] border border-white/10 rounded-xl overflow-hidden hover:border-white/20 transition-colors">

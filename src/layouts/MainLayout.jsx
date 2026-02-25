@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, Linkedin, MessageCircle } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 const Navbar = () => (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-white/10">
@@ -18,7 +17,7 @@ const Navbar = () => (
 const Footer = () => (
     <footer className="border-t border-white/10 py-8 mt-20">
         <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">© 2024 Pedro Queiroz. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2026 Pedro Queiroz. All rights reserved.</p>
             <div className="flex gap-4">
                 <a href="https://github.com/pedroqueirozs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                     <Github size={20} />

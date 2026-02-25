@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const About = ({ data }) => {
     return (
         <section id="about" className="py-24 bg-neutral-900/30">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Github, Linkedin, MessageSquare } from 'lucide-react';
 
 export const Contact = ({ data }) => {
@@ -27,6 +26,15 @@ export const Contact = ({ data }) => {
                     >
                         <Linkedin size={20} />
                         <span>LinkedIn</span>
+                    </a>
+                    <a
+                        href={data.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-6 py-3 bg-[#0077b5]/10 border border-[#0077b5]/20 text-[#0077b5] rounded-full hover:bg-[#0077b5]/20 transition-colors"
+                    >
+                        <Github size={20} />
+                        <span>GitHub</span>
                     </a>
                     <a
                         href={data.social.whatsapp}
