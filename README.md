@@ -16,7 +16,7 @@ Portifólio desenvolvido afim de mostrar um pouco dos projetos que ja realizei e
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="./src/assets/layout.png" width="70%">
+  <img alt="layout" src="./src/assets/layout.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
